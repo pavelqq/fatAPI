@@ -1,5 +1,5 @@
 {
-  "name": "backendforfat",
+  "name": "apifat",
   "version": "1.0.0",
   "description": "backend server for fat client",
   "main": "index.js",
