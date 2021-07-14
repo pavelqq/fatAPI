@@ -12,6 +12,8 @@ const users = require("./routes/users");
 const posts = require("./routes/posts");
 const projects = require("./routes/projects");
 const events = require("./routes/events");
+const conversations = require("./routes/conversations");
+const messages = require("./routes/messages")
 
 winston.exceptions.handle(
     new winston.transports.Console({colorize: true, prettyprint: true}),
@@ -44,6 +46,8 @@ app.use("/api/users", users);
 app.use("/api/posts", posts);
 app.use("/api/projects", projects);
 app.use("/api/events", events);
+app.use("/api/conversations", conversations);
+app.use("/api/messages", messages);
 
 app.get("/", (req, res) => {
     res.send("добро пожаловать в API фэт...");

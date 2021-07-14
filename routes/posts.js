@@ -17,6 +17,17 @@ router.get("/:currentUserId", auth, async (req, res, next) => {
     }
 });
 
+router.get("/allPosts/all", async (req, res, next) => {
+    try {
+        const allPosts = await Post.find().sort({date: -1});
+        res.send(allPosts);
+    } catch (error) {
+        res.status(500).send("Ошибка: " + error.message);
+
+        winston.error(error.message);
+    }
+});
+
 router.post("/", auth, async (req, res) => {
     const schema = Joi.object({
         description: Joi.string().required(),

@@ -31,7 +31,6 @@ router.get("/allProjects/all", async (req, res, next) => {
     }
 });
 
-
 //получить проект по id
 router.get("/current/:id", async (req, res) => {
     try {
