@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-<img src="Api Fatty.png" alt="Logo" width="80" height="80">
+<img src="ApiFatty.png" alt="Logo" width="80" height="80">
 
   <h3 align="center">API для спортивной социальной сети</h3>
 
